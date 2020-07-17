@@ -4,6 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
+    "lint": "npx eslint --fix .",
     "start": "node lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:samples": "node test/createSamples.js"
@@ -14,5 +15,10 @@
     "call-of-duty-api": "^1.2.8",
     "lodash": "^4.17.19",
     "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
   }
 }
