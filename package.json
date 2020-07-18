@@ -17,8 +17,8 @@
   "author": "Mauricio Sanches",
   "license": "ISC",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/bauricio/codstats.git"
+    "type": "git",
+    "url": "https://github.com/bauricio/codstats.git"
   },
   "dependencies": {
     "call-of-duty-api": "^1.2.8",
