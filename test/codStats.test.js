@@ -32,7 +32,9 @@ describe('call of duty stats', () => {
   test('extract game information', () => {
     const game = stats['2020-07-17'].matches[0];
     expect(game).toEqual({
+      teamPlacement: 8,
       date: '2020-07-17T00:40:50-03:00',
+      mode: "br_brquads",
       kills: 2,
       deaths: 1,
       kdRatio: 2,
