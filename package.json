@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "npx eslint --fix .",
     "start": "node lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "test:samples": "node test/createSamples.js"
   },
   "husky": {
@@ -17,18 +17,21 @@
   "author": "Mauricio Sanches",
   "license": "ISC",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/bauricio/codstats.git"
+    "type": "git",
+    "url": "https://github.com/bauricio/codstats.git"
   },
   "dependencies": {
     "call-of-duty-api": "^1.2.8",
     "lodash": "^4.17.19",
-    "moment": "^2.27.0"
+    "moment": "^2.27.0",
+    "moment-range": "^4.0.2"
   },
   "devDependencies": {
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
-    "husky": "^4.2.5"
+    "eslint-plugin-jest": "^23.19.0",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0"
   }
 }
