@@ -17,7 +17,7 @@ describe('call of duty stats', () => {
     expect(stats['2020-07-17'].totalDeaths).toBe(3);
   });
 
-  test.skip('calculates the kill/death ratio rounding', () => {
+  test('calculates the kill/death ratio rounding', () => {
     expect(stats['2020-07-15'].kdRatio).toBe(1.44);
     expect(stats['2020-07-16'].kdRatio).toBe(1.53);
     expect(stats['2020-07-17'].kdRatio).toBe(3.33);
