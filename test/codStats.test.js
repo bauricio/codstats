@@ -34,7 +34,7 @@ describe('call of duty stats', () => {
     expect(game).toEqual({
       teamPlacement: 8,
       date: '2020-07-17T00:40:50-03:00',
-      mode: "br_brquads",
+      mode: 'br_brquads',
       kills: 2,
       deaths: 1,
       kdRatio: 2,
