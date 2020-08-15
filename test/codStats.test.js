@@ -40,4 +40,28 @@ describe('call of duty stats', () => {
       kdRatio: 2,
     });
   });
+
+  test('filters non BR matches', () => {
+    const { summary, matches } = MWcombatwz;
+    const plunderMatch = {
+      mode: 'br_dmz_plunquad',
+      utcStartSeconds: 1594957000,
+      playerStats: {},
+    };
+    const matchesWithPlunder = {
+      summary,
+      matches: [plunderMatch, ...matches],
+    };
+
+    const games = codStats(matchesWithPlunder)['2020-07-17'].matches;
+    expect(games).toHaveLength(2);
+    expect(games[0]).toEqual({
+      teamPlacement: 8,
+      date: '2020-07-17T00:40:50-03:00',
+      mode: 'br_brquads',
+      kills: 2,
+      deaths: 1,
+      kdRatio: 2,
+    });
+  });
 });
