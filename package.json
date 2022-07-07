@@ -23,7 +23,7 @@
   "dependencies": {
     "call-of-duty-api": "^1.2.8",
     "lodash": "^4.17.19",
-    "moment": "^2.27.0",
+    "moment": "^2.29.4",
     "moment-range": "^4.0.2",
     "round-to": "^4.1.0"
   },
